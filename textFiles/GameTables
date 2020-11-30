@@ -1,0 +1,16 @@
+---------API LIKE CONTENT---------
+[
+  creatures { ant [health, attack, possible gold value, ect ]};
+
+  armor{ .............
+        name, str, value 
+    }
+
+  weapons{............}
+
+  bosses{.................}
+
+  events {.....}
+
+
+]

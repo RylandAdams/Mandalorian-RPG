@@ -1,0 +1,6 @@
+1. Enters FIGHT
+2. First turn givin to person with highest speed
+3. Options: Attack/Flee
+  (a) Attack with Main weapon (default)/ Attack with Secondary weapon (class specific)
+  (b) Flee and display message "You cannot flee. This is the way"
+4. If attack, roll for chance to hit
