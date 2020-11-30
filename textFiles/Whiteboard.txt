@@ -11,8 +11,6 @@
   bosses{.................}
 
   events {.....}
-
-
 ]
 
 Start of game
@@ -106,8 +104,59 @@ Enemies (health, melee, ranged, exp, credits, loot){
   Trandoshan Bountry Hunter
   Rodian Bountry Hunter
   Phlutdroid  Bountry Hunter
-  Yuuzhan Vong (bonus)
   Ewoks (bonus)
+}
+
+Bosses {
+  Armored Hutt
+  At-St
+  Sith Inquisitor
+  Rancore
+}
+
+Armor {
+  plastoid(stormtrooper)
+  Phrik(DarkTroopers)
+  Officer Armor
+  Baktoid(b1)
+  Renforced Baktoid(superb2)
+  Durasteel enforced Baktoid(commando/ phlutdroid)
+  cloth
+  M'uhk'gfa(gammorean heavy plate)
+  Durasteel(trandoshan)
+  Stalker armor(rodian)
+  Hutt battle armor
+  beskar plate
+}
+
+rangedWeapons {
+  E-11 blaster
+  ARC caster
+  SE-14 blaster
+  E-5 blaster
+  Dual wrist blaster
+  tusken cycler rifle
+  trandoshan hunting rifle
+  ACP array gun
+  repulsor throwing razor
+  DLT-20A blaster
+  E-web heavy repeating blaster
+  88i twin light blaster cannon (atst)
+  missle launcher (atst)
+}
+
+meleeWeapons {
+  gaderffii
+  Gamorean battleaxe
+  slaver blades
+  rodian cryogen whip
+  vibro blades
+  stone spear
+  rancore Claws
+  rancore bite
+  lightsaber
+  thermal detonator
+  flamethrower
 }
 
 Randomly generated mission

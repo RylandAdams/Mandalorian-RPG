@@ -1,0 +1,6 @@
+1. Player enters Journey (stocked after Bounty or Story missions are entered)
+2. Display missions to choose from Random: (Easy), (Medium), or (Hard)
+3. Player chooses mission
+  a. select and push range of rooms from journey difficulty
+4. Player will progress through random rooms to special end room.
+5. Mission is complete when final room is cleared and player leaves area.

@@ -1,0 +1,9 @@
+1. Player enters Bounty (stocked after Journey or Story missions are entered)
+2. Display missions to choose from - (Preset: 1 Easy 1 Medium 1 Hard) & Random: (1 Medium 1 Hard)
+3. Player chooses mission
+  a. select and push range of rooms from journey difficulty
+  b. push specific boss room to the end of mission
+4. Player will progress through random rooms to a pre-determined boss room
+5. Mission is complete when final room is cleared and player leaves area.
+
+Note: Bounty is for collecting trophies(text based) and pre-determined reward.

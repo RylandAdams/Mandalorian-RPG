@@ -2,26 +2,34 @@ Character Stats:
   Health = hitpoints (changes given armorTotal stats)
   Strength = Damage (higher if 'Melee' class/ lower if 'Ranged' class)
   Precision = Damage (higher if 'Ranged' class/ lower if 'Melee' class)
+  Intellect = Damage (higher if 'Balanced' class/ lower if 'Melee' or 'Ranged' class)
   Speed = first turn if higher than enemy/ second turn if lower than enemy
+  Backpack = inventory array
 
  getStats(class) {
     if(class === 'Melee') {
       this.health = Math.floor((Math.random() * (20 - 10)) + 10);
       this.strength = Math.floor((Math.random() * (10 - 6)) + 6);
       this.precision = Math.floor((Math.random() * (6 - 2)) + 2);
-      this.speed = Math.floor((Math.random() * (10 - 4)) + 4); 
+      this.intellect = Math.floor((Math.random() * (10 - 4)) + 4);
+      this.speed = Math.floor((Math.random() * (10 - 4)) + 4);
+      this.backpack = [];
     } else if(class === 'Ranged') {
       this.health = Math.floor((Math.random() * (14 - 6)) + 6);
       this.strength = Math.floor((Math.random() * (5 - 2)) + 2);
       this.precision = Math.floor((Math.random() * (14 - 5)) + 5);
+      this.intellect = Math.floor((Math.random() * (10 - 4)) + 4);
       this.speed = Math.floor((Math.random() * (6 - 2)) + 2);
+      this.backpack = [];
     } else if(class === 'Balanced') {
       this.health = Math.floor((Math.random() * (20 - 10)) + 10);
       this.strength = Math.floor((Math.random() * (10 - 6)) + 6);
       this.precision = Math.floor((Math.random() * (6 - 2)) + 2);
+      this.intellect = Math.floor((Math.random() * (10 - 4)) + 4);
       this.speed = Math.floor((Math.random() * (10 - 4)) + 4);
+      this.backpack = [];
     }
-  }  
+  }
 
 
 
@@ -34,7 +42,9 @@ Mandalorian {
     this.health
     this.strength
     this.precision
+    this.intellect
     this.speed
+    this.backpack = []
 
   this.armourTotal
     this.helmet
@@ -42,8 +52,9 @@ Mandalorian {
     this.arms 
     this.legs
 
-  this.primaryWeapon
-  this.secondWeapon
+  this.meleeWeapon // strength (Damage)
+  this.rangedWeapon // precision (Damage)
+  this.ability // intellect (Damage)
 
   this.credits
   this.beskar
