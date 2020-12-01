@@ -25,11 +25,11 @@ export default class Mandalorian {
 
     this.credits = 0;
     this.beskar = 0;
-
+  }
 
 
   getStats(selectedClass) {
-    if(selectedClass === 'Melee'){
+    if(selectedClass === 'Melee') {
       this.health = Math.floor((Math.random() * (20 - 10)) + 10);
       this.str = Math.floor((Math.random() * (10 - 6)) + 6);
       this.int = Math.floor((Math.random() * (6 - 2)) + 2);
@@ -50,3 +50,4 @@ export default class Mandalorian {
     }
   }
 }
+
