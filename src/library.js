@@ -1,46 +1,46 @@
-{
-  "common": {
-    "results": [
-      {
-        "index": "E-11 blaster",
-        "name": "<span class Gold> E-11 blaster </span>",
-        "damage": 15,
-        "damage-multi": 1.3,
-        "value": 60,
-      },
-    ]
-  },
+// {
+//   "common": {
+//     "results": [
+//       {
+//         "index": "E-11 blaster",
+//         "name": "<span class Gold> E-11 blaster </span>",
+//         "damage": 15,
+//         "damage-multi": 1.3,
+//         "value": 60,
+//       },
+//     ]
+//   },
 
-  "uncommon": {
+//   "uncommon": {
 
-  },
+//   },
 
-  "creatures": {
+//   "creatures": {
 
-  },
+//   },
 
-  "boss": {
+//   "boss": {
 
-  },
+//   },
 
-  "events": {
+//   "events": {
 
-  },
+//   },
 
-  "rooms": {
+//   "rooms": {
 
-  },
-}
+//   },
+// }
 
 //lodash.js _.range() function
 
-_.range(10);
- => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-_.range(1, 11);
- => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-_.range(0, 30, 5);
- => [0, 5, 10, 15, 20, 25]
-_.range(0, -10, -1);
+// _.range(10);
+//  => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+// _.range(1, 11);
+//  => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// _.range(0, 30, 5);
+//  => [0, 5, 10, 15, 20, 25]
+// _.range(0, -10, -1);
 
 // [
 //   creatures { ant [health, attack, possible gold value, ect ]};
