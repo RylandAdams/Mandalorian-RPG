@@ -90,3 +90,44 @@ meleeWeapons (weaponStrength, damageMultiplier, value){
   thermal detonator
   flamethrower
 }
+
+let roll = openChest; Math.floor(Math.random() * 100) + 1;
+let loot = [[common], [uncommon], [rare], [exotic], [legendary]];
+let inventory = [];
+let item = 0;
+
+// - Straight from the API method option - //
+if (roll <= 50) {
+  item =  Math.floor(Math.random() * 20) + 1;
+  inventory.push(loot[item]);
+} else if (roll <= 80) {
+  item =  Math.floor(Math.random() * 30) + 21;
+  inventory.push(loot[uncommon]);
+} else if (95) {
+  item =  Math.floor(Math.random() * 37) + 31;
+  inventory.push(loot[rare]);
+} else if (96) {
+  item =  Math.floor(Math.random() * 40) + 38;
+  inventory.push()
+}
+
+// - Scalable Method - //
+
+roll for rarity
+
+if (roll <= 50) {
+  item =  Math.floor(Math.random() * common.length) - 1;
+  inventory.push(loot.common[item]);
+} else if (roll <= 80) {
+  item =  Math.floor(Math.random() * uncommon.length) - 1;
+  inventory.push(loot.uncommon[item]);
+} else if (95) {
+  item =  Math.floor(Math.random() * rare.length) - 1;
+  inventory.push(loot.rare[item]);
+} else if (96) {
+  item =  Math.floor(Math.random() * exotic.length) - 1;
+  inventory.push(loot.exotic[item])
+} else if (99) {
+  item =  Math.floor(Math.random() * legendary.length) - 1;
+  inventory.push(loot.legendary[item])
+}
