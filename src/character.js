@@ -1,27 +1,32 @@
 export default class Mandalorian {
   constructor (characterName, selectedClass) {
+    // - Basic Stats - //
     this.name = characterName;
     this.class = selectedClass;
-
+    this.currentLocation = "tutorial";    
     this.totalHealth = 0;
     this.currentHealth = this.totalHealth;
+    
+    // - Attributes - //
+    this.health = 0;
+    this.strength = 0;
+    this.precision = 0;
+    this.intellect = 0;
+    this.speed = 0;
+    this.armorTotal = 0;
 
-      this.health = 0;
-      this.strength = 0;
-      this.precision = 0;
-      this.intellect = 0;
-      this.speed = 0;
-      this.backpack = [];
-
-    this.armorTotal
-      this.equippedHelmet = [];
-      this.equippedChest = [];
-      this.equippedArms = [];
-      this.equippedLegs = [];
+    // - Inventory/Equipment - //
+    this.backpack = [];
 
     this.equippedMeleeWeapon = [];
     this.equippedRangedWeapon = [];
     this.equippedAbility = [];
+
+
+    this.equippedHelmet = [];
+    this.equippedChest = [];
+    this.equippedArms = [];
+    this.equippedLegs = [];
 
     this.credits = 0;
     this.beskar = 0;
@@ -49,4 +54,6 @@ export default class Mandalorian {
       this.speed = Math.floor((Math.random() * (3 - 1)) + 1); 
     }
   }
+
+
 }
