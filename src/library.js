@@ -1,3 +1,41 @@
+function Enemies(id, health, armortotal, weaponstrength, strength, precision, speed) {
+  this.id = id;
+  this.health = health;
+  this.armortotal = armortotal;
+  this.weaponstrength = weaponstrength;
+  this.strength = strength;
+  this.precision = precision;
+  this.speed = speed;
+}
+
+function Bosses (id, health, armortotal, weaponstrength, strength, precision, speed) {
+  this.id = id;
+  this.health = health;
+  this.armortotal = armortotal;
+  this.weaponstrength = weaponstrength;
+  this.strength = strength;
+  this.precision = precision;
+  this.speed = speed;
+}
+
+function Locations (id, description) {
+  this.id = id;
+  this.description = description;
+}
+
+function Weapons (id, weaponstrength, damagemulti, value) {
+  this.id = id;
+  this.weaponstrength = weaponstrength;
+  this.damagemulti = damagemulti;
+  this.value = value;
+}
+
+function Armor (id, armorrate, value) {
+  this.id = id;
+  this.armorrate = armorrate;
+  this.value = value;
+}
+
 "index": {
   "creatures": [
     "npc": [],
