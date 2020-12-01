@@ -21,12 +21,12 @@ export default class Mandalorian {
     this.equippedMeleeWeapon = [];
     this.equippedRangedWeapon = [];
     this.equippedAbility = [];
+    this.equippedArmor = [];
 
-
-    this.equippedHelmet = [];
-    this.equippedChest = [];
-    this.equippedArms = [];
-    this.equippedLegs = [];
+    // this.equippedHelmet = [];
+    // this.equippedChest = [];
+    // this.equippedArms = [];
+    // this.equippedLegs = [];
 
     this.credits = 0;
     this.beskar = 0;
