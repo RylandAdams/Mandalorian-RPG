@@ -46,7 +46,7 @@ Mandalorian {
     this.speed
     this.backpack = []
 
-  this.armourTotal
+  this.armorTotal
     this.helmet
     this.chest
     this.arms 

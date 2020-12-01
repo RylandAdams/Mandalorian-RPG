@@ -1,0 +1,8 @@
+Player enters Main Story
+  Main story missions require certain number of materials to start
+  Player will enter mission if pre-requisites are met
+    Missions are pre-determined by specific rooms and enemies as well as rewards
+    Loot is not high level, but randomly generated
+    Missions are meant to build armor for character
+  As a reward for each mission, you lose your materials but forge a new armor piece as a reward for completion
+

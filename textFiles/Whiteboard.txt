@@ -6,7 +6,18 @@
         name, str, value 
     }
 
-  weapons{............}
+  weapons{[Name and rarity, damage, value, weaponClass]
+          [<span class "GOLD"> AO blaster </span>, 15, 25, Ranged]
+          [<span class "GOLD"> AO blaster </span>, 15, 25, Ranged]
+          [<span class "GOLD"> AO blaster </span>, 15, 25, Ranged]
+          [<span class "GOLD"> AO blaster </span>, 15, 25, Ranged]
+          [<span class "GOLD"> AO blaster </span>, 15, 25, Ranged]
+          [<span class "GOLD"> AO blaster </span>, 15, 25, Ranged]
+          [<span class "GOLD"> AO blaster </span>, 15, 25, Ranged]
+          [<span class "GOLD"> AO blaster </span>, 15, 25, Ranged]
+          [<span class "GOLD"> AO blaster </span>, 15, 25, Ranged]
+          [<span class "GOLD"> AO blaster </span>, 15, 25, Ranged]
+          }
 
   bosses{.................}
 

@@ -1,0 +1,29 @@
+Room 1
+  1. description of Room
+  2. roll initiative based on speed
+  3. combat:
+      enemy
+  4. explore:
+      possibly generated loot
+      random articles in room
+  4. movement
+      exit home (secure loot)
+      continue to next room (risk it for biscuit)
+
+Note: 3 and 4 are interchangable based on initiative roll
+  if your initiative roll is higher than the enemy, you have
+  the option to either enter combat or explore.
+
+  Players initiative for attacking first is lost if player decides
+  to explore instead of enter combat first.
+
+
+
+
+
+
+
+
+
+
+

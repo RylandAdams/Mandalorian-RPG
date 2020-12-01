@@ -7,7 +7,7 @@
 5. If miss, pass turn to enemy
 6. If hit, roll for damage (enemy health - (weapons strength + damage roll))
 7. If enemy hp <= 0 then run loot
-8. (OPTIONAL) loot will give options to push to inventory array
+8. loot will give options to push to inventory array
 9. player has ability to explore/continue to next room
 
 1. Enters BOSS FIGHT
@@ -19,6 +19,7 @@
 5. If miss, pass turn to enemy
 6. If hit, roll for damage (enemy health - (weapons strength + damage roll))
 7. If enemy hp <= 0 then run loot
-8. (OPTIONAL) loot will push enemy trophy to inventory array
+8. loot will give options to push to inventory array
+  (a) (OPTIONAL) loot will push enemy trophy to inventory array
 9. player has ability to explore room post fight event (give description of room)
 10. option to complete mission/explore
