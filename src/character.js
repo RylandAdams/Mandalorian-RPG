@@ -30,24 +30,23 @@ export default class Mandalorian {
 
   getStats(selectedClass) {
     if(selectedClass === 'Melee') {
-      this.health = Math.floor((Math.random() * (20 - 10)) + 10);
-      this.str = Math.floor((Math.random() * (10 - 6)) + 6);
-      this.int = Math.floor((Math.random() * (6 - 2)) + 2);
-      this.spd = Math.floor((Math.random() * (10 - 4)) + 4);
-      this.mana = Math.floor((Math.random() * (3 - 1)) + 1);   
+      this.health = Math.floor((Math.random() * (40 - 30)) + 30);
+      this.strength = Math.floor((Math.random() * (5 - 3)) + 3);
+      this.precision = Math.floor((Math.random() * (6 - 2)) + 2);
+      this.intellect = Math.floor((Math.random() * (10 - 4)) + 4);
+      this.speed = Math.floor((Math.random() * (3 - 1)) + 1);   
     } else if(selectedClass === 'Ranged') {
-      this.health = Math.floor((Math.random() * (14 - 6)) + 6);
-      this.str = Math.floor((Math.random() * (5 - 2)) + 2);
-      this.int = Math.floor((Math.random() * (14 - 5)) + 5);
-      this.spd = Math.floor((Math.random() * (6 - 2)) + 2);
-      this.mana = Math.floor((Math.random() * (12 - 7)) + 7); 
+      this.health = Math.floor((Math.random() * (35 - 25)) + 25);
+      this.strength = Math.floor((Math.random() * (5 - 2)) + 2);
+      this.precision = Math.floor((Math.random() * (14 - 5)) + 5);
+      this.intellect = Math.floor((Math.random() * (6 - 2)) + 2);
+      this.speed = Math.floor((Math.random() * (12 - 7)) + 7); 
     } else if(selectedClass === 'Balanced') {
-      this.health = Math.floor((Math.random() * (20 - 10)) + 10);
-      this.str = Math.floor((Math.random() * (10 - 6)) + 6);
-      this.int = Math.floor((Math.random() * (6 - 2)) + 2);
-      this.spd = Math.floor((Math.random() * (10 - 4)) + 4);
-      this.mana = Math.floor((Math.random() * (3 - 1)) + 1); 
+      this.health = Math.floor((Math.random() * (35 - 25)) + 25);
+      this.strength = Math.floor((Math.random() * (10 - 6)) + 6);
+      this.precision = Math.floor((Math.random() * (6 - 2)) + 2);
+      this.intellect = Math.floor((Math.random() * (10 - 4)) + 4);
+      this.speed = Math.floor((Math.random() * (3 - 1)) + 1); 
     }
   }
 }
-
