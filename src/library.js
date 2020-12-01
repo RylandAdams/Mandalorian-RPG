@@ -131,4 +131,3 @@ _.range(0, -10, -1);
 //   lightsaber
 //   thermal detonator
 //   flamethrower
-// }
