@@ -1,0 +1,106 @@
+Whiteboard:
+
+Prompt:
+
+Creating a space for the character to exist and navigate throughout the game world.
+
+story {
+  import store
+
+}
+
+1. Character starts in the tutorial "area" 
+ - starts with little narrative/flovor peice that explains the creeds
+ - shows players how to play the game
+    * this is a text based game 
+    * in every scenario you are prmpoted with a scenece setter which would be for example " you walk into the cantina....."
+    * following this scene you are givin options
+      1. lets go on a journy 
+      2. lets go to the market 
+      3. I heard there are bountys lets go get one
+    * in order to start down one of those options you must type the corresponding number into the terminal and hit enter.
+ - this is how every situation in navigated, why dont you start by selcting the only option availble 
+
+
+here is a example 
+
+To make up for the absence of tools for pseudo-code editing and code generation, a B/S based pseudo-code editor and generator named Transcode is presented. Transcode adopts Javascript in client for editing and displaying and uses Java in server for storage and code generation, making it possible to edit pseudo-code online without delay and providing the function of data reuse. It is compatible to all the mainstream browsers and has great application value.
+
+To make up for the absence of tools for pseudo-code editing and code generation, a B/S based pseudo-code editor and generator named Transcode is presented. Transcode adopts Javascript in client for editing and displaying and uses Java in server for storage and code generation, making it possible to edit pseudo-code online without delay and providing the function of data reuse. It is compatible to all the mainstream browsers and has great application value.
+To make up for the absence of tools for pseudo-code editing and code generation, a B/S based pseudo-code editor and generator named Transcode is presented. Transcode adopts Javascript in client for editing and displaying and uses Java in server for storage and code generation, making it possible to edit pseudo-code online without delay and providing the function of data reuse. It is compatible to all the mainstream browsers and has great application value.
+
+options -----------------------------------------------------------------------------------------------------
+
+1. go to cantins
+
+
+typing ----  1  
+
+you are now in the cantina
+
+To make up for the absence of tools for pseudo-code editing and code generation, a B/S based pseudo-code editor and generator named Transcode is presented. Transcode adopts Javascript in client for editing and displaying and uses Java in server for storage and code generation, making it possible to edit pseudo-code online without delay and providing the function of data reuse. It is compatible to all the mainstream browsers and has great application value.To make up for the absence of tools for pseudo-code editing and code generation, a B/S based pseudo-code editor and generator named Transcode is presented. Transcode adopts Javascript in client for editing and displaying and uses Java in server for storage and code generation, making it possible to edit pseudo-code online without delay and providing the function of data reuse. It is compatible to all the mainstream browsers and has great application value.To make up for the absence of tools for pseudo-code editing and code generation, a B/S based pseudo-code editor and generator named Transcode is presented. Transcode adopts Javascript in client for editing and displaying and uses Java in server for storage and code generation, making it possible to edit pseudo-code online without delay and providing the function of data reuse. It is compatible to all the mainstream browsers and has great application value.
+
+options -----------------------------------------------------------------------------------------------------
+
+1. go on journy 
+2. dasdad
+3. 
+
+typing 2
+
+
+
+combat  example
+
+you did 10 dmage this monster has 13 left 
+
+creatures move - creature did 10 damage to you 
+
+your options------------------------------------------------------------------------------------------------
+
+1. attack with primary weapon (E-11 - 16 to 23)
+2. attack with secondary weapon (vibro sword - 10 to 15 dmg)
+3. use abilty (Flame thrower - 50 to 35 dmg)
+
+
+Cantina (default)
+ - this is the default location. all characters are here unless are somewhere else.
+ - from here you can select your mission type
+    * Story (1. Go to the bar and ask the bartender if he's heard any news lately.)
+    * Bounty (2. Walk up to the bounty board and see what bounties are available.)
+    * Journey (3. Gather your belongings and prepare to go on a Journey.)
+    * (or visit the back room for Market *stretch)
+
+Story
+ - main story  missions
+ - custom written story (custom by us)
+ - Story missions are barred until the character has earned enough beskar. 
+   * Once enough beskar is obtained the user can begin the story mission. 
+   * Upon completion of the story mission the required beskar will be removed from the character's inventory.
+
+Bounties
+ - non thematic missions with a pre-determined boss at the end
+ - listed by difficulty
+   * easy
+   * medium
+   * hard
+ - bounties display
+   * name of boss you will be "hunting"
+   * special weapon/armor boss carries
+   * any other monetary/resource rewards
+
+Journey
+ - an exploration style mission with no predetermined loot or boss
+ - very similar to bounties or mission but the rewards will include beskar.
+ - also listed by difficulty
+   * easy
+   * medium
+   * hard
+
+Market
+ - presents the player with stock that is randomly selected from our api 
+   * 2-5 items of lower rarity 
+   * will be offered for gold 
+ - players can sell items that they have collected throughout their game
+   * all items have a gold value  
+ - (stretch goal)stock always has a few of the same things like health packs 
