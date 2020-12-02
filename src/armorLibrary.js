@@ -1,9 +1,10 @@
-export default function Armor (id, armorrate, value) {
+export default function Armor (id, armorRate, value) {
   this.id = id;
-  this.armorrate = armorrate;
+  this.armorRate = armorRate;
   this.value = value;
 }
 
+let starterArmor = new Armor ("Starting Armor", 3, 1);
 let plastoid = new Armor ("Plastoid", 5, 50);
 let phrikPlating = new Armor ("Phrik plating", 10, 100);
 let baktoid = new Armor ("Baktoid", 10, 100);

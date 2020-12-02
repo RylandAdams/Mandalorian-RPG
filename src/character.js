@@ -4,10 +4,10 @@ export default class Mandalorian {
     this.charName = characterName;
     this.charClass = selectedClass;
     this.currentLocation = "tutorial";    
-    this.currentHealth = 0;
+    this.currentHealth = 100;
     
     // - Attributes - //
-    this.maxHealth = 0;
+    this.maxHealth = 100;
     this.strength = 0;
     this.precision = 0;
     this.intellect = 0;
@@ -22,37 +22,38 @@ export default class Mandalorian {
     this.equippedAbility = [];
     this.equippedArmor = [];
 
-    // this.equippedHelmet = [];
-    // this.equippedChest = [];
-    // this.equippedArms = [];
-    // this.equippedLegs = [];
-
     this.credits = 0;
     this.beskar = 0;
     this.story = 0;
   }
 
-
   getStats() {
     if(this.charClass === 'Melee') {
-      this.maxHealth = Math.floor((Math.random() * (40 - 30)) + 30);
       this.strength = Math.floor((Math.random() * (5 - 3)) + 3);
       this.precision = Math.floor((Math.random() * (6 - 2)) + 2);
       this.intellect = Math.floor((Math.random() * (10 - 4)) + 4);
       this.speed = Math.floor((Math.random() * (3 - 1)) + 1);   
     } else if(this.charClass === 'Ranged') {
-      this.maxHealth = Math.floor((Math.random() * (35 - 25)) + 25);
       this.strength = Math.floor((Math.random() * (5 - 2)) + 2);
       this.precision = Math.floor((Math.random() * (14 - 5)) + 5);
       this.intellect = Math.floor((Math.random() * (6 - 2)) + 2);
       this.speed = Math.floor((Math.random() * (12 - 7)) + 7); 
     } else if(this.charClass === 'Balanced') {
-      this.maxHealth = Math.floor((Math.random() * (35 - 25)) + 25);
       this.strength = Math.floor((Math.random() * (10 - 6)) + 6);
       this.precision = Math.floor((Math.random() * (6 - 2)) + 2);
       this.intellect = Math.floor((Math.random() * (10 - 4)) + 4);
       this.speed = Math.floor((Math.random() * (3 - 1)) + 1); 
     }
-    this.currentHealth = this.maxHealth;
+  }
+
+  getStarterEquip() {
+    let starterDagger; // to fix
+    let starterBlaster; // to fix
+    let starterAbility; // to fix
+    let starterArmor; // to fix
+    this.equippedMeleeWeapon = starterDagger;
+    this.equippedRangedWeapon = starterBlaster;
+    this.equippedAbility = starterAbility;
+    this.equippedArmor = starterArmor;
   }
 }
