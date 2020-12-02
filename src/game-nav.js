@@ -24,10 +24,10 @@ export default function startGame(player) {
   //     // }
   //   } else if(this.currentLocation === "journey"){
       
-      // if (this.currentLocation === "easy-journey"){   //THIS CHUNK WORKS//
-      //   let difficulty = 'easy';
-      //   let easyjourney = new Journey(difficulty);
-      //   easyjourney.journeyMission();
+  // if (this.currentLocation === "easy-journey"){   //THIS CHUNK WORKS//
+  //   let difficulty = 'easy';
+  //   let easyjourney = new Journey(difficulty);
+  //   easyjourney.journeyMission();
   //     } else if(this.currentLocation === "med-journey"){
   //       let difficulty = 'med';
   //       let medjourney = new Journey(difficulty);

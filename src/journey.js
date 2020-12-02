@@ -2,8 +2,7 @@
 // import Enemies from './enemiesLibrary.js';
 // import Bosses from './bossesLibrary.js';
 // import Armor from './armorLibrary.js';
-import Locations from './locationsLibrary.js';
-
+import JourneyArr from './locationsLibrary.js';
 export default class Journey {
   constructor (difficulty) {
     this.difficulty = difficulty;
@@ -17,28 +16,138 @@ export default class Journey {
   }
   
   journeyMission() {
-    if (this.difficulty === 'easy') {
-      console.log("this is an easy journey");
-      let pick = Math.floor((Math.random() * (32 - 0)) + 0);
-      //console.log(pick);
-     // let theRoom = Locations.journeyArray[pick];
-      let check = Locations.journeyArray[pick].id;
-      console.log(check);
+    if (this.difficulty === 'easy') { // this is all the code for EASY Journey ---------------------
+      let journeyArray = new JourneyArr();
+      let pick1 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room1 = journeyArray.all[pick1];
+
+      console.log(room1.id);
+      console.log(room1.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room 
+      let pick2 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room2 = journeyArray.all[pick2];
+
+      console.log(room2.id);
+      console.log(room2.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room
+      
+      let pick3 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room3 = journeyArray.all[pick3];
+
+      console.log(room3.id);
+      console.log(room3.description);
+      console.log("choices");
 
     } 
-    // else if (this.difficulty === 'med') {
-    //   this.maxHealth = Math.floor((Math.random() * (35 - 25)) + 25);
-    //   this.strength = Math.floor((Math.random() * (5 - 2)) + 2);
-    //   this.precision = Math.floor((Math.random() * (14 - 5)) + 5);
-    //   this.intellect = Math.floor((Math.random() * (6 - 2)) + 2);
-    //   this.speed = Math.floor((Math.random() * (12 - 7)) + 7); 
-    // } else if (this.difficulty === 'hard') {
-    //   this.maxHealth = Math.floor((Math.random() * (35 - 25)) + 25);
-    //   this.strength = Math.floor((Math.random() * (10 - 6)) + 6);
-    //   this.precision = Math.floor((Math.random() * (6 - 2)) + 2);
-    //   this.intellect = Math.floor((Math.random() * (10 - 4)) + 4);
-    //   this.speed = Math.floor((Math.random() * (3 - 1)) + 1); 
-    // }
-    // this.currentHealth = this.maxHealth;
+    else if (this.difficulty === 'med') { // this is all the code for MED Journey ---------------------
+      let journeyArray = new JourneyArr();
+      let pick1 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room1 = journeyArray.all[pick1];
+
+      console.log(room1.id);
+      console.log(room1.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room 
+      let pick2 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room2 = journeyArray.all[pick2];
+
+      console.log(room2.id);
+      console.log(room2.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room
+      
+      let pick3 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room3 = journeyArray.all[pick3];
+
+      console.log(room3.id);
+      console.log(room3.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room
+      
+      let pick4 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room4 = journeyArray.all[pick4];
+
+      console.log(room4.id);
+      console.log(room4.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room
+      
+      let pick5 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room5 = journeyArray.all[pick5];
+
+      console.log(room5.id);
+      console.log(room5.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room
+      
+    } else if (this.difficulty === 'hard') { // this is all the code for HARD Journey ---------------------
+      let journeyArray = new JourneyArr();
+      let pick1 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room1 = journeyArray.all[pick1];
+
+      console.log(room1.id);
+      console.log(room1.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room 
+      let pick2 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room2 = journeyArray.all[pick2];
+
+      console.log(room2.id);
+      console.log(room2.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room
+      
+      let pick3 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room3 = journeyArray.all[pick3];
+
+      console.log(room3.id);
+      console.log(room3.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room
+      
+      let pick4 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room4 = journeyArray.all[pick4];
+
+      console.log(room4.id);
+      console.log(room4.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room
+      
+      let pick5 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room5 = journeyArray.all[pick5];
+
+      console.log(room5.id);
+      console.log(room5.description);
+      console.log("choices");
+
+      let pick6 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room6 = journeyArray.all[pick6];
+
+      console.log(room6.id);
+      console.log(room6.description);
+      console.log("choices");
+      //all the other actions in room 
+      //leave to go to next room
+      
+      let pick7 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
+      let room7 = journeyArray.all[pick7];
+
+      console.log(room7.id);
+      console.log(room7.description);
+      console.log("choices");
+    }
   }
 }
