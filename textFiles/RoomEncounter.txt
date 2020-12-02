@@ -17,6 +17,22 @@ Note: 3 and 4 are interchangable based on initiative roll
   Players initiative for attacking first is lost if player decides
   to explore instead of enter combat first.
 
+location Construct {
+    this.name = name;
+    this.description = description;
+    this.enemy = random enemy;
+    this.loot = random loot;
+    this.locationDif = mission.difficulty;
+}
+
+mission constructor {
+    this.missionName = name;
+    this.missionDescription = description;
+    this.locations = 3 || 5 || 7 //based on difficulty
+    this.difficulty = easy, medium, or hard;
+    this.missionType = story, bounty, or journey;
+}
+
 
 
 
