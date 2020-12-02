@@ -29,6 +29,7 @@ export default class Mandalorian {
 
     this.credits = 0;
     this.beskar = 0;
+    this.story = 0;
   }
 
 
