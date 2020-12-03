@@ -8,8 +8,8 @@ export default function Bosses (id, health, armorTotal, weaponStrength, strength
   this.speed = speed;
 }
 
-let ig88 = new Bosses ("IG-88", 50, 20, 25, 6, 7, 6);
-let sithInquistor = new Bosses ("Sith Inquistor", 60, 15, 30, 5, 7, 8);
+// let ig88 = new Bosses ("IG-88", 50, 20, 25, 6, 7, 6);
+// let sithInquistor = new Bosses ("Sith Inquistor", 60, 15, 30, 5, 7, 8);
 
-// Boss array
-let bossArray = [ig88, sithInquistor];
+// // Boss array
+// let bossArray = [ig88, sithInquistor];

@@ -11,5 +11,5 @@ let baktoid = new Armor ("Baktoid", 10, 100);
 let reenforcedBaktoid = new Armor ("Re-Enforced Baktoid", 15, 150);
 let beskarPlate = new Armor ("Beskar Plate", 25, 250);
 
-// armor array
-let armorArray = [plastoid, phrikPlating, baktoid, reenforcedBaktoid, beskarPlate];
+// // armor array
+// let armorArray = [plastoid, phrikPlating, baktoid, reenforcedBaktoid, beskarPlate];
