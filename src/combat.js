@@ -74,28 +74,16 @@ function checkForDeath(player, enemy) {
   }
 }
 
-/*
-function searchRoom () {
-  if (player.speed >= enemy.speed) {
-    player is prompted to select action of either search or attack;
-    if (userInput === "1") {
-      attack();
-    } else if (userInput === "2") {
-      searchLoot();
-    }
-  } else {
-    attack();
-  }
-}
-
-combat;
-while(combat != false) {
-if (player speed is greater)
-attack(player, enemy);
-combat = checkForDeath();
-attack(enemy, player)
-combat = checkForDeath();
-else if (enemy speed is greater)
-attack(enemy, player);
-}
-*/
+// stretch goal
+// function searchRoom () {
+//   if (player.speed >= enemy.speed) {
+//     player is prompted to select action of either search or attack;
+//     if (userInput === "1") {
+//       attack();
+//     } else if (userInput === "2") {
+//       searchLoot();
+//     }
+//   } else {
+//     attack();
+//   }
+// }
