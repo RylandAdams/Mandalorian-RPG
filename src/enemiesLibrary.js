@@ -1,9 +1,9 @@
 class Enemies {
-  constructor (id, health, armortotal, weaponstrength, strength, precision, speed) {
+    constructor (id, health, armorTotal, weaponStrength, strength, precision, speed) {
     this.id = id;
     this.health = health;
-    this.armortotal = armortotal;
-    this.weaponstrength = weaponstrength;
+    this.armorTotal = armorTotal;
+    this.weaponStrength = weaponStrength;
     this.strength = strength;
     this.precision = precision;
     this.speed = speed;
