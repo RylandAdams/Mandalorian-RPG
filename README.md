@@ -43,13 +43,31 @@
 
 ## Technologies and tools used
 
+<details>
+  <summary>Expand Tech/tools</summary>
+
 - Visual Studio Code
-- HTML
-- Markdowne
-- Bootstrap
-- Css
+- Html
+- markdown
+- bootstrap
+- css
 - jQuery
-- Javascript
+- javaScript
+- clean-webpack-plugin
+- css-loader
+- eslint
+- eslint-loader
+- html-webpack-plugin
+- style-loader
+- webpack
+- webpack-cli
+- webpack-dev-server
+- popper.js
+- jest
+- babel
+- dotenv
+
+</details>
 
 ## Legal 
 * _This software is licensed under the [MIT] license_

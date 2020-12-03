@@ -47,3 +47,23 @@
 //     storyMission();
 //   } else {
 //   console.log ("you dont have enough beskar");
+
+
+
+
+
+FROM COMBAT
+
+  // stretch goal
+  // function searchRoom () {
+  //   if (player.speed >= enemy.speed) {
+  //     player is prompted to select action of either search or attack;
+  //     if (userInput === "1") {
+  //       attack();
+  //     } else if (userInput === "2") {
+  //       searchLoot();
+  //     }
+  //   } else {
+  //     attack();
+  //   }
+  // }

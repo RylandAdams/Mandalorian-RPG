@@ -1,10 +1,13 @@
+import WeaponsArr from './weaponsLibrary.js';
+import ArmorArr from './armorLibrary.js';
+
 export default class Mandalorian {
   constructor (characterName, selectedClass) {
     // - Basic Stats - //
     this.charName = characterName;
     this.charClass = selectedClass;
     this.currentLocation;   
-    this.currentHealth = 100;
+    this.health;
     
     // - Attributes - //
     this.maxHealth = 100;
@@ -47,13 +50,11 @@ export default class Mandalorian {
   }
 
   getStarterEquip() {
-    let starterDagger; // to fix
-    let starterBlaster; // to fix
-    let starterAbility; // to fix
-    let starterArmor; // to fix
-    this.equippedMeleeWeapon = starterDagger;
-    this.equippedRangedWeapon = starterBlaster;
-    this.equippedAbility = starterAbility;
-    this.equippedArmor = starterArmor;
+    let starterWeapons = new WeaponsArr();
+    let starterArmor = new ArmorArr();
+    this.equippedMeleeWeapon = starterWeapons.starterDagger;
+    this.equippedRangedWeapon = starterWeapons.starterBlaster;
+    this.equippedAbility = starterWeapons.starterAbility;
+    this.equippedArmor = starterArmor.starterArmor;
   }
 }

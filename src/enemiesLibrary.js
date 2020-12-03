@@ -1,5 +1,5 @@
 class Enemies {
-    constructor (id, health, armorTotal, weaponStrength, strength, precision, speed) {
+  constructor (id, health, armorTotal, weaponStrength, strength, precision, speed) {
     this.id = id;
     this.health = health;
     this.armorTotal = armorTotal;
@@ -13,7 +13,7 @@ class Enemies {
 let stormTrooper = new Enemies ("Stormtrooper", 20, 5, 15, 2, 1, 2);
 let battleDroid = new Enemies ("Battle droid", 10, 10, 10, 3, 2, 1);
 let darkTrooper = new Enemies ("Dark Trooper", 30, 10, 20, 3, 3, 3);
-let superBattleDroid = new Enemies ("Super Battle Droid", 30, 15, 20, 5, 4, 3, );
+let superBattleDroid = new Enemies ("Super Battle Droid", 30, 15, 20, 5, 4, 3);
 let droidCommando = new Enemies ("Droid Commando", 35, 15, 20, 5, 6, 5);
 let gaggleOfEwoks = new Enemies ("Gaggle of Ewoks", 10, 10, 10, 3, 2, 1);
 let zabrak = new Enemies ("Zabrak", 30, 10, 20, 3, 3, 3);

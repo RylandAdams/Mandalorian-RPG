@@ -2,8 +2,11 @@
 // import Enemies from './enemiesLibrary.js';
 // import Bosses from './bossesLibrary.js';
 // import Armor from './armorLibrary.js';
+import Combat from './combat.js';
 import EnemiesArr from './enemiesLibrary.js';
 import JourneyArr from './locationsLibrary.js';
+import {player} from './main.js';
+
 export default class Journey {
   constructor (difficulty) {
     this.difficulty = difficulty;
@@ -15,19 +18,37 @@ export default class Journey {
     this.room6;
     this.room7;
   }
+
+  
   
   journeyMission() {
+    let combat = new Combat();
     if (this.difficulty === 'easy') { // this is all the code for EASY Journey ---------------------
       let journeyArray = new JourneyArr();
       let pick1 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
       let room1 = journeyArray.all[pick1];
+      
       let enemiesArray = new EnemiesArr();
-      let dudes1 = Math.floor((Math.random() * (enemiesArray.jerks.length - 0)) + 0);
-      let enemy1 = enemiesArray.jerks[dudes1];
+      let random = Math.floor((Math.random() * (enemiesArray.jerks.length - 0)) + 0);
+      let enemy1 = enemiesArray.jerks[random];
+      
+      console.log(enemy1.id);
+      console.log(enemy1.health);
       console.log(room1.id);
       console.log(room1.description);
-      console.log(enemy1.id);
-      console.log("choices");
+
+      if (player.speed >= enemy1.speed){
+        while(enemy1.health > 0 || player.health > 0){
+          combat.playerAttackFirst(player, enemy1);
+          combat.checkForDeath(player, enemy1);
+        }
+      } else if (player.speed < enemy1.speed) {
+        while(enemy1.health > 0 || player.health > 0){
+          combat.enemyAttackFirst(player, enemy1);
+          combat.checkForDeath(player, enemy1);
+        }
+      }
+      
       //all the other actions in room 
       //leave to go to next room 
       let pick2 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);

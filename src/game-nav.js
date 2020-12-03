@@ -12,6 +12,7 @@ export default function startGame(player) {
   player.currentLocation = prompt(`Where would you like to go ${player.charName}?`);
   switch(player.currentLocation) {
   case "1": {
+    player.health = player.maxHealth;
     console.log(`You walk into a nearly empty cantina. There is a bartender behind the counter, wiping a glass. A bounty board with several faces, some familiar, hangs on the back wall. There are tables and chairs throughout the room, none of which look all that comfortable, but the booze looks like it drinks well.`);
     console.log(`What would you like to do?`);
     console.log("-----------------------------");

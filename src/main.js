@@ -8,8 +8,13 @@ $;
 
 let characterName = "Mando";
 let selectedClass = "Ranged";
-let player = new Mandalorian (characterName,selectedClass);
+let player = new Mandalorian (characterName, selectedClass);
+
+// export features declared earlier
+export { player }; 
 
 player.getStats();
+player.getStarterEquip();
+//module.exports.player = player;
 startGame(player);
-//startGame(player);
+
