@@ -1,40 +1,61 @@
-export default function startGame() {
-    if (this.currentLocation === "tutorial"){
-      console.log('creed');
-      console.log('rules');
-      console.log('options');
-    } else if(this.currentLocation === "cantina"){
-      console.log(`You walk into a nearly empty cantina. There is a bartender behind the counter, wiping a glass. A bounty board with several faces, some familiar, hangs on the back wall. There are tables and chairs throughout the room, none of which look all that comfortable, but the booze looks like it drinks well.`);
-      console.log(`What would you like to do?`);
+import Journey from './journey.js';
+export default function startGame(player) {
+  Journey;
+  console.log('You are currently in the tutorial...');
+  console.log('creed');
+  console.log('Enter the number corresponding with the choices you are given...');
+  console.log(`What would you like to do?`);
+  console.log("-----------------------------");
+  console.log('1 - Go to Cantina');
+  player.currentLocation = prompt(`Where would you like to go ${player.charName}?`);
+  switch(player.currentLocation) {
+  case "1": {
+    console.log(`You walk into a nearly empty cantina. There is a bartender behind the counter, wiping a glass. A bounty board with several faces, some familiar, hangs on the back wall. There are tables and chairs throughout the room, none of which look all that comfortable, but the booze looks like it drinks well.`);
+    console.log(`What would you like to do?`);
+    console.log("-----------------------------");
+    console.log("1. Approach the man behind the bar and ask about rumors and news. (Story Mission)");
+    console.log("2. Checkout the bounty board. (Bounty Mission)");
+    console.log("3. Gather your things and step out to explore. (Journey Mission)");
+    player.currentLocation = prompt(`What would you like to do next ${player.charName}?`);
+  }
+    switch(player.currentLocation) {
+    case "1": {
+      console.log("choice 1");
+      break;
+    }
+    case "2": {
+      console.log("choice 2");
+      break;
+    }
+    case "3": {
+      console.log('You venture back to your ship, to set out on a journey');
+      console.log(`What would you like to do ${player.charName}?`);
       console.log("-----------------------------");
-      console.log("1. Approach the man behind the bar and ask about rumors and news. (Story Mission)");
-      console.log("2. Checkout the bounty board. (Bounty Mission)");
-      console.log("3. Gather your things and step out to explore. (Journey Mission)");
-      if (userInput === "1") {
-        this.currentLocation = "story";
-      } else if (userInput === "2") {
-        this.currentLocation = "bounty";
-      } else if (userInput === "3") {
-        this.currentLocation = "journey";
+      console.log("1. A quick jot to a near star. (Easy Journey)");
+      console.log("2. A journey for normally experienced bounty hunters. (Medium Journey)");
+      console.log("3. A lengthy and grueling adventure, are you sure you're up to it? (Hard Journey)");
+      player.currentLocation = prompt(`What difficulty do you want to choose, ${player.charName}?`);
+      switch(player.currentLocation) {
+      case "1": {
+        let difficulty = 'easy';
+        let easyjourney = new Journey(difficulty);
+        easyjourney.journeyMission();
+        break;
       }
-    } else if(this.currentLocation === "journey"){
-      
-      if (this.currentLocation === "easy-journey"){
-        journeyMissionEasy();
-      } else if(this.currentLocation === "med-journey"){
-        journeyMissionMed();
-      } else if(this.currentLocation === "hard-journey"){
-        journeyMissionHard();
-    }else if(this.currentLocation === "market"){
-      
-    } else if(this.currentLocation === "bounty"){
-      bountyMission();
-    } else if(this.currentLocation === "story"){
-      if(beskar >= 50){
-        storyMission();
-      } else {
-            console.log ("you dont have enough beskar");
+      case "2":{
+        let difficulty = 'med';
+        let medjourney = new Journey(difficulty);
+        medjourney.journeyMission();
+        break;
+      }
+      case "3":{
+        let difficulty = 'hard';
+        let hardjourney = new Journey(difficulty);
+        hardjourney.journeyMission();
+        break;
+      }
       }
     }
+    }
   }
-};
+}

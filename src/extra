@@ -1,0 +1,49 @@
+
+//   let text;
+// player.currentLocation = prompt("Where would you like to go Mando?");
+// switch(player.currentLocation) {
+//   case "Cantina":
+//     text = "You go to the cantina";
+//     break;
+//   case "Journey":
+//     text = "You head to the Outer Rim on a epic Journey";
+//     break;
+//   case "Cosmopolitan":
+//     text = "Really? Are you sure the Cosmopolitan is your favorite?";
+//     break;
+//   default:
+//     text = "I have never heard of that one..";
+//     break;
+// }
+    
+    
+
+// if (player.currentLocation == "1") {
+//   this.currentLocation = "story"; 
+// } else if (player.currentLocation == "2") {
+//   this.currentLocation = "bounty";
+// } else if (player.currentLocation == "3") {
+//   this.currentLocation = "journey";
+// } else if(this.currentLocation === "journey"){
+//     console.log("you made it");
+//   if (this.currentLocation === "easy-journey"){   //THIS CHUNK WORKS//
+//     let difficulty = 'easy';
+//     let easyjourney = new Journey(difficulty);
+//     easyjourney.journeyMission();
+// } else if(this.currentLocation === "med-journey"){
+//   let difficulty = 'med';
+//   let medjourney = new Journey(difficulty);
+//   medjourney.journeyMission();
+// } else if(this.currentLocation === "hard-journey"){
+//   let difficulty = 'hard';
+//   let hardjourney = new Journey(difficulty);
+//   hardjourney.journeyMission();
+// }else if(this.currentLocation === "market"){
+  
+// } else if(this.currentLocation === "bounty"){
+//   bountyMission();
+// } else if(this.currentLocation === "story"){
+//   if(beskar >= 50){
+//     storyMission();
+//   } else {
+//   console.log ("you dont have enough beskar");

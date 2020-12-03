@@ -1,6 +1,8 @@
-export default function Locations (id, description) {
-  this.id = id;
-  this.description = description;
+class Locations {
+  constructor (id, description) {
+    this.id = id;
+    this.description = description;
+  }
 }
 
 // All our locations
@@ -41,13 +43,19 @@ let wildsBeach = new Locations("Beach", "The sand crunchs beneath your boots. Th
 let wildsTallPeak = new Locations("Tall Peak", "Having made your way to the top of a nearby Mountain, you scan the horizon for your target.");
 
 // Our journey array 
-let journeyArray = [shipBridge, shipCargoBay, shipshipEngineering, shipMessHall, shipNarrowCorridor, shipWideCorridor, shipshipEngineering, baseControlRoom, baseStorage, baseArmory, baseRange, baseVehicleLot, baseWatchTower, baseWall, baseBarracks, hideoutEntrance, hideoutDarkCorridor, hideoutHumidHall, hideoutStorage, hideoutArmory, hideoutLargeChamber, hideoutSmallChamber, hideoutSeceretTunnel, wildsSwam, wildsThickFoliage, wildsRiverCrossing, wildsTallGrass, wildsRockOutcropping, wildsOpenMeadow, wildsBeach, wildsTallPeak];
+
+export default class JourneyArr {
+  constructor(){
+    this.all = [shipBridge, shipCargoBay, shipEngineering, shipMessHall, shipNarrowCorridor, shipWideCorridor, shipEngineering, shipMedbay, shipCrewQuarters, baseControlRoom, baseStorage, baseArmory, baseRange, baseVehicleLot, baseWatchTower, baseWall, baseBarracks, hideoutEntrance, hideoutDarkCorridor, hideoutHumidHall, hideoutStorage, hideoutArmory, hideoutLargeChamber, hideoutSmallChamber, hideoutSeceretTunnel, wildsSwamp, wildsThickFoliage, wildsRiverCrossing, wildsTallGrass, wildsRockOutcropping, wildsOpenMeadow, wildsBeach, wildsTallPeak];
+  }
+}
+// module.exports = journeyArray;
 
 // Our bounty and story arrays//
-let shipArray = [shipBridge, shipCargoBay, shipEngineering, shipMessHall, shipNarrowCorridor, shipWideCorridor, shipMedbay, shipCrewQuarters];
+// let shipArray = [shipBridge, shipCargoBay, shipEngineering, shipMessHall, shipNarrowCorridor, shipWideCorridor, shipMedbay, shipCrewQuarters];
 
-let baseArray = [baseControlRoom, baseStorage, baseArmory, baseRange, baseVehicleLot, baseWatchTower, baseWall, baseBarracks];
+// let baseArray = [baseControlRoom, baseStorage, baseArmory, baseRange, baseVehicleLot, baseWatchTower, baseWall, baseBarracks];
 
-let hideoutArray = [hideoutEntrance, hideoutDarkCorridor, hideoutHumidHall, hideoutStorage, hideoutArmory, hideoutLargeChamber, hideoutSmallChamber, hideoutSeceretTunnel];
+// let hideoutArray = [hideoutEntrance, hideoutDarkCorridor, hideoutHumidHall, hideoutStorage, hideoutArmory, hideoutLargeChamber, hideoutSmallChamber, hideoutSeceretTunnel];
 
-let wildsArray = [wildsSwam, wildsThickFoliage, wildsRiverCrossing, wildsTallGrass, wildsRockOutcropping, wildsOpenMeadow, wildsBeach, wildsTallPeak];
+// let wildsArray = [wildsSwamp, wildsThickFoliage, wildsRiverCrossing, wildsTallGrass, wildsRockOutcropping, wildsOpenMeadow, wildsBeach, wildsTallPeak];
