@@ -1,8 +1,10 @@
-// export default function Weapons (id, weaponstrength, damagemulti, value) {
+// class Weapons {
+  // constructor (id, weaponstrength, damagemulti, value) {
 //   this.id = id;
 //   this.weaponstrength = weaponstrength;
 //   this.damagemulti = damagemulti;
 //   this.value = value;
+//  }
 // }
 
 // let e11Blaster = new Weapons("E-11 Blaster", 15, 1, 50);
@@ -22,4 +24,7 @@
 // let whistlingBirds = new Weapons("Whistling Birds", 35, 1, 80);
 
 // // weapons array
-// let weaponsArray = [e11Blaster, arcCaster, se14Blaster, e5Blaster, dualWristBlaster, tuskenCyclerRifle, acpArrayGun, dlt20ABlaster, gaderffii, gamoreanBattleAxe, vibroBlades, rodianCryogenWhip, thermalDetonator, flameThrower, whistlingBirds];
+// export default class WeaponsArr { 
+  //constructor(){
+    //this.blasters = [e11Blaster, arcCaster, se14Blaster, e5Blaster, dualWristBlaster, tuskenCyclerRifle, acpArrayGun, dlt20ABlaster, gaderffii, gamoreanBattleAxe, vibroBlades, rodianCryogenWhip, thermalDetonator, flameThrower, whistlingBirds];
+//}

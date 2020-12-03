@@ -3,7 +3,7 @@ export default class Mandalorian {
     // - Basic Stats - //
     this.charName = characterName;
     this.charClass = selectedClass;
-    this.currentLocation = "tutorial";    
+    this.currentLocation;   
     this.currentHealth = 0;
     
     // - Attributes - //

@@ -2,6 +2,7 @@
 // import Enemies from './enemiesLibrary.js';
 // import Bosses from './bossesLibrary.js';
 // import Armor from './armorLibrary.js';
+import EnemiesArr from './enemiesLibrary.js';
 import JourneyArr from './locationsLibrary.js';
 export default class Journey {
   constructor (difficulty) {
@@ -20,26 +21,37 @@ export default class Journey {
       let journeyArray = new JourneyArr();
       let pick1 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
       let room1 = journeyArray.all[pick1];
-
+      let enemiesArray = new EnemiesArr();
+      let dudes1 = Math.floor((Math.random() * (enemiesArray.jerks.length - 0)) + 0);
+      let enemy1 = enemiesArray.jerks[dudes1];
       console.log(room1.id);
       console.log(room1.description);
+      console.log(enemy1.id);
       console.log("choices");
       //all the other actions in room 
       //leave to go to next room 
       let pick2 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
       let room2 = journeyArray.all[pick2];
+    
+      let dudes2 = Math.floor((Math.random() * (enemiesArray.jerks.length - 0)) + 0);
+      let enemy2 = enemiesArray.jerks[dudes2];
 
       console.log(room2.id);
       console.log(room2.description);
+      console.log(enemy2.id);
       console.log("choices");
       //all the other actions in room 
       //leave to go to next room
       
       let pick3 = Math.floor((Math.random() * (journeyArray.all.length - 0)) + 0);
       let room3 = journeyArray.all[pick3];
+    
+      let dudes3 = Math.floor((Math.random() * (enemiesArray.jerks.length - 0)) + 0);
+      let enemy3 = enemiesArray.jerks[dudes3];
 
       console.log(room3.id);
       console.log(room3.description);
+      console.log(enemy3.id);
       console.log("choices");
 
     } 
