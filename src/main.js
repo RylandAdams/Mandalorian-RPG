@@ -27,6 +27,8 @@ if (selectClassOption === '1') {
 	selectedClass = 'Melee';
 }
 
+// let characterName = 'Mando';
+// let selectedClass = 'Ranged';
 let player = new Mandalorian(characterName, selectedClass);
 
 console.log(player);
