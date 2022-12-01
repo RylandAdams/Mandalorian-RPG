@@ -19,6 +19,7 @@ let selectClassOption = prompt(
 	`Well ${characterName}, what do you specialize in?`
 );
 
+// Setting option to class value
 if (selectClassOption === '1') {
 	selectedClass = 'Balanced';
 } else if (selectClassOption === '2') {
@@ -27,8 +28,6 @@ if (selectClassOption === '1') {
 	selectedClass = 'Melee';
 }
 
-// let characterName = 'Mando';
-// let selectedClass = 'Ranged';
 let player = new Mandalorian(characterName, selectedClass);
 
 console.log(player);
