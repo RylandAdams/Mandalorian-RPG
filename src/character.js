@@ -33,16 +33,19 @@ export default class Mandalorian {
 	// - Generates Stats In Range Based On Class - //
 	getStats() {
 		if (this.charClass === 'Melee') {
+			console.log('MELEE');
 			this.strength = Math.floor(Math.random() * (5 - 3) + 3);
 			this.precision = Math.floor(Math.random() * (6 - 2) + 2);
 			this.intellect = Math.floor(Math.random() * (10 - 4) + 4);
 			this.speed = Math.floor(Math.random() * (3 - 1) + 1);
 		} else if (this.charClass === 'Ranged') {
+			console.log('RANGED');
 			this.strength = Math.floor(Math.random() * (5 - 2) + 2);
 			this.precision = Math.floor(Math.random() * (14 - 5) + 5);
 			this.intellect = Math.floor(Math.random() * (6 - 2) + 2);
 			this.speed = Math.floor(Math.random() * (12 - 7) + 7);
 		} else if (this.charClass === 'Balanced') {
+			console.log('BALANCED');
 			this.strength = Math.floor(Math.random() * (10 - 6) + 6);
 			this.precision = Math.floor(Math.random() * (6 - 2) + 2);
 			this.intellect = Math.floor(Math.random() * (10 - 4) + 4);
